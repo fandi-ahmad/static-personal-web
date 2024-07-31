@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fandi Ahmad</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/logo/logo-fandi.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="p-8 absolute bg-dark-navy">
+        <div>
+            <img src="assets/logo/logo-fandi.webp" alt="" style="width: 45px;">
+        </div>
+        <ul class="text-sm font-medium">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#portofolio">portofolio</a></li>
+            <li><a href="#experience">experience</a></li>
+            <a href="#contact" class="blue-btn">contact</a>
+        </ul>
+        <div class="nav-menu" onclick="toggleNavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- stick navbar -->
+    <nav id="navbar" class="px-8 py-4 fixed" style=" margin-top: -200px;">
+        <div>
+            <img src="assets/logo/logo-fandi.webp" alt="" style="width: 45px;">
+        </div>
+        <ul class="text-sm font-medium">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#portofolio">portofolio</a></li>
+            <li><a href="#experience">experience</a></li>
+            <a href="#contact" class="blue-btn">contact</a>
+        </ul>
+        <div class="nav-menu cursor-pointer" onclick="toggleNavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- mini navbar (onClick navMenu) -->
+    <div id="miniNavbar" class="mini-navbar text-white" style="margin-top: -1000px;">
+        <ul class="font-medium">
+            <li><a href="#home" onclick="toggleNavbar()">home</a></li>
+            <li><a href="#about" onclick="toggleNavbar()">about me</a></li>
+            <li><a href="#portofolio" onclick="toggleNavbar()">portofolio</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#experience" onclick="toggleNavbar()">experience</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="mt-10 text-2xl cursor-pointer" onclick="toggleNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <section id="home" class="h-screen bg-cover bg-center flex justify-start items-center m-0 bg-dark-navy">
+        <div class="home-text">
+            <p class="text-xl lg:text-2xl text-white font-bold pl-8" data-aos="fade-up" data-aos-duration="600">Hi, I'm Fandi Ahmad</p>
+            <h1 class="text-5xl lg:text-8xl text-white font-bold mb-10 pl-8" data-aos="fade-up" data-aos-duration="800">Front-End Developer</h1>
+            <a href="#portofolio" class="blue-btn-glow font-semibold py-3 px-6 ml-8" data-aos="fade-up" data-aos-duration="1000">View My Work</a>
+            <div class="bubble-blur-field">
+                <div class="bubble-blur"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="about" class="about px-10 text-white bg-dark-navy">
+        <div class="my-5 about-field">
+            <div class="rounded-2xl about-img" style="background-image: url(assets/images/my-photo.webp)"></div>
+            <div class="rounded-full about-shape"></div>
+        </div>
+        <div class="px-4 about-text">
+            <h2 class="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="500">About Me</h2>
+            <p class="sm:text-sm lg:text-lg text-justify" data-aos="fade-up" data-aos-duration="750">
+                Halo, saya Fandi, seorang Front-End Developer yang baru saja memulai karir di dunia programming. Saya memiliki pengetahuan dalam HTML, CSS, dan JavaScript, serta pengalaman dengan kerangka kerja seperti React dan Vue. Saya bersemangat dalam menciptakan pengalaman web yang menarik dan interaktif, dan selalu terbuka untuk belajar dan berkembang lebih jauh dalam bidang ini.
+            </p>
+            <div class="mt-4" data-aos="fade-up" data-aos-duration="1000">
+                <button class="blue-btn mr-4 mb-4">Hire Me</button>
+                <button class="blue-btn-border">Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="portofolio" class="bg-dark-navy text-white flex flex-col gap-10 pb-16">
+        <h1 class="text-xl font-semibold text-white uppercase tracking-wider flex justify-center pt-20 pb-10">Portofolio</h1>
+        
+        <div class="px-10 pb-10 bg-dark-navy text-white porto">
+            <div class="px-4 porto-text">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up" data-aos-duration="500">Project 1</h2>
+                <h2 class="text-xl font-bold mb-4 capitalize" data-aos="fade-up" data-aos-duration="750">Landing page PENA</h2>
+                <p class="lg:text-lg text-justify" data-aos="fade-up" data-aos-duration="1000">
+                    PENA (Programming Engineering and Networking Adhi Guna) merupakan organisasi kemahasiswaan yang berfokus di bidang IT. PENA adalah komunitas yang berdedikasi untuk mengembangkan pengetahuan dan keterampilan di bidang pemrograman, rekayasa perangkat lunak, dan jaringan komputer.
+                </p>
+                <a href="https://penaku.tech" target="_blank">
+                    <button class="blue-btn mt-4 mb-4" data-aos="fade-up" data-aos-duration="1250">more</button>
+                </a>
+            </div>
+            <div class="py-5 porto-field" >
+                <div class="rounded-2xl porto-img" style="background-image: url(assets/images/web-pena.png)"></div>
+                <div class="rounded-full porto-shape"></div>
+            </div>
+        </div>
+
+        <div class="px-10 pb-10 bg-dark-navy text-white porto-2">
+            <div class="px-4 porto-text">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up" data-aos-duration="500">Project 2</h2>
+                <h2 class="text-xl font-bold mb-4 capitalize" data-aos="fade-up" data-aos-duration="750">To Do List App</h2>
+                <p class="lg:text-lg text-justify" data-aos="fade-up" data-aos-duration="1000">
+                    Aplikasi to do list sederhana yang dibuat dengan HTML, CSS dan Javascript. Mudah tambahkan, tandai, dan hapus tugas untuk hari ini atau besok. Menggunakan local storage browser sebagai penyimpanan data pada aplikasi. Dan juga tersedia fitur untuk berganti tema terang dan gelap.
+                </p>
+                <a href="./mini-project/todolist/" target="_blank">
+                    <button class="blue-btn mt-4 mb-4" data-aos="fade-up" data-aos-duration="1250">more</button>
+                </a>
+            </div>
+            <div class="py-5 porto-field-2">
+                <div class="rounded-2xl porto-img" style="background-image: url(assets/images/todolist-app-preview.png)"></div>
+                <div class="rounded-full porto-shape-2"></div>
+            </div>
+        </div>
+
+        <div class="px-10 pb-10 bg-dark-navy text-white porto">
+            <div class="px-4 porto-text">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up" data-aos-duration="500">Project 3</h2>
+                <h2 class="text-xl font-bold mb-4 capitalize" data-aos="fade-up" data-aos-duration="750">Whack a Mole</h2>
+                <p class="lg:text-lg text-justify" data-aos="fade-up" data-aos-duration="1000">
+                    Game 'Whack-a-Mole: Tikus Tanah. Siapkan palu digitalmu dan siap-siap untuk memukul tikus-tikus yang muncul dengan cepat. Tunjukkan seberapa cepat reaksimu dalam permainan ini. Tantang dirimu sendiri untuk meraih skor tertinggi dalam usaha memukul tikus-tikus yang muncul semakin liar. 
+                </p>
+                <a href="./mini-project/whackamole/" target="_blank">
+                    <button class="blue-btn mt-4 mb-4" data-aos="fade-up" data-aos-duration="1250">more</button>
+                </a>
+            </div>
+            <div class="py-5 porto-field">
+                <div class="rounded-2xl porto-img" style="background-image: url(assets/images/whackamole-preview.png)"></div>
+                <div class="rounded-full porto-shape"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="bg-dark-navy text-white flex flex-col justify-center items-center pb-16">
+        <h1 class="text-xl font-semibold uppercase tracking-wider flex justify-center py-10">Experience</h1>
+        <div class="flex flex-col w-9/12">
+            <div class="experience">
+                <div>
+                    <img loading="lazy" src="assets/logo/html.png" alt="" class="logo-skill">
+                    <p class="text-center">HTML</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/logo/css.png" alt="" class="logo-skill">
+                    <p class="text-center">CSS</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/logo/javascript.png" alt="" class="logo-skill">
+                    <p class="text-center">javascript</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/logo/reactjs.png" alt="" class="logo-skill">
+                    <p class="text-center">ReactJS</p>
+                </div>
+            </div>
+            <div class="experience">
+                <div>
+                    <img loading="lazy" src="assets/logo/vuejs.png" alt="" class="logo-skill">
+                    <p class="text-center">VueJS</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/logo/nodejs.png" alt="" class="logo-skill">
+                    <p class="text-center">NodeJS</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/logo/tailwind.png" alt="" class="logo-skill">
+                    <p class="text-center">Tailwind</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/logo/figma.png" alt="" class="logo-skill">
+                    <p class="text-center">Figma</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="bg-gray-800 text-white flex justify-between flex-col sm:flex-row p-10 gap-10">
+        <div class="w-full flex justify-center sm:justify-start sm:items-start">
+            <img src="assets/logo/logo-fandi.webp" alt="" class="w-12">
+        </div>
+
+        <div class="w-full flex justify-center">
+            <div>
+                <h3 class="text-lg text-center">Social Media</h3>
+                <div class="mt-2 grid grid-cols-4 gap-4">
+                    <a href="https://instagram.com/fandi.jsx" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://facebook.com/FandiAhmad.1111/" target="_blank">
+                        <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/fandijsx/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://github.com/fandi-ahmad" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center sm:justify-end">
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg mb-2">Navigation</h3>
+                <a href="#home">home</a> <br>
+                <a href="#about">about me</a> <br>
+                <a href="#portofolio">portofolio</a> <br>
+                <a href="#experience">experience</a> <br>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
